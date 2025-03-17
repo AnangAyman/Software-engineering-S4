@@ -1,0 +1,155 @@
+body {
+    font-family: Inter;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffb91f;
+    border-radius: 16px;
+    padding: 30px;
+    width: 380px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 0 4px #FFF08C;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.sign-up
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffb91f;
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 2px #FFF08C;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.forgot-link {
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #cca01f;
+}
+
+.divider-text {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.social-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 5px 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-button img, .social-icon {
+    margin-right: 8px;
+}
+
+.terms-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.terms-text a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.recaptcha-text {
+    font-size: 12px;
+    color: #333;
+}
+
+.recaptcha-text a {
+    color: #000;
+    text-decoration: none;
+}
