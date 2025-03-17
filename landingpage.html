@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duolingo Sign Language</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <nav class="nav">
+    <img src="../Assets/logo.png" alt="" class="logo">
+    <div class="language-selector">
+      SITE LANGUAGE: ENGLISH
+      <span class="arrow-down"></span>
+    </div>
+  </nav>
+  <div class="blue-divider"></div>
+  
+  <div class="main">
+    <div class="earth-container">
+      <img src="earth.png" alt="earth">
+    </div>
+    
+    <h1>The free, fun, and effective way to<br>learn sign language!</h1>
+    
+    <button class="btn-primary" onclick="window.location.href = '../signin/signin.html'">GET STARTED</button>
+    <button class="btn-secondary" onclick="window.location.href = '../login/login.html'">I ALREADY HAVE AN ACCOUNT</button>
+  </div>
+  
+  <div class="language-carousel">
+    <button class="carousel-nav nav-left">‹</button>
+    <div class="carousel-container">
+      <div class="language-option">SPANISH</div>
+      <div class="language-option">FRENCH</div>
+      <div class="language-option">GERMAN</div>
+      <div class="language-option">ITALIAN</div>
+      <div class="language-option">PORTUGUESE</div>
+      <div class="language-option">DUTCH</div>
+      <div class="language-option">JAPANESE</div>
+    </div>
+    <button class="carousel-nav nav-right">›</button>
+  </div>
+  
+  <script src="landinglogic.js"></script>
+</body>
+</html>
