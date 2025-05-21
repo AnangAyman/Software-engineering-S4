@@ -137,7 +137,7 @@ def check_answer():
     return jsonify({"result": selected == correct})
 
 
-# ----------------------------------- CNN-LSTM MODEL ------------------------------------------------
+# # ----------------------------------- CNN-LSTM MODEL ------------------------------------------------
 from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
