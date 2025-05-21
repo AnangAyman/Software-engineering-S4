@@ -9,57 +9,60 @@
     <link rel="stylesheet" href="../static/videostyle.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h4 class="mb-4">Bisindo Letters</h4>
-        
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">7/10</div>
-                <div class="stat-label">Progress</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">85%</div>
-                <div class="stat-label">Accuracy</div>
-            </div>
-        </div>
-
-        <div class="progress-bar-container">
-            <div class="progress-bar-fill"></div>
-        </div>
-
-        <!-- ! Make sure to actually make a javascript for lesson status later on -->
-        {% for lesson in lessons %}
-        <div class="lesson-item {{ lesson.status }}"
-             {% if lesson.url %}onclick="window.location.href='{{ lesson.url }}'"{% endif %}>
-          {% if lesson.status == 'completed' %}
-            <i class="fas fa-check-circle me-2 text-success"></i>
-          {% elif lesson.status == 'current' %}
-            <i class="fas fa-play-circle me-2 text-primary"></i>
-          {% else %}
-            <i class="fas fa-circle me-2 text-secondary"></i>
-          {% endif %}
-          {{ lesson.title }}
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="container">
-        <div class="main_wrapper">
-            <div class="main-content">
-                <h1>🎥 Learn with Video: Bisindo Letter "U"</h1>
-                <p>Watch the video below to learn how to recognize and sign the letter <strong>U</strong> in Bisindo (Indonesian Sign Language). Follow along and practice!</p>
-
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Bisindo Letter U Tutorial" allowfullscreen></iframe>
+    <div id="app-layout">
+        <div class="sidebar">
+            <h4 class="mb-4">Bisindo Letters</h4>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">7/10</div>
+                    <div class="stat-label">Progress</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
             </div>
 
-            <div class="tips">
-                <h2>✅ Quick Tips</h2>
-                <ul>
-                    <li>Use both pinky and index fingers extended for letter U</li>
-                    <li>Keep the middle and ring fingers folded down</li>
-                    <li>Thumb should hold down the two folded fingers</li>
-                </ul>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill"></div>
+            </div>
+
+            <!-- Lessons list -->
+            {% for lesson in lessons %}
+            <div class="lesson-item {{ lesson.status }}"
+                 {% if lesson.url %}onclick="window.location.href='{{ lesson.url }}'"{% endif %}>
+              {% if lesson.status == 'completed' %}
+                <i class="fas fa-check-circle me-2 text-success"></i>
+              {% elif lesson.status == 'current' %}
+                <i class="fas fa-play-circle me-2 text-primary"></i>
+              {% else %}
+                <i class="fas fa-circle me-2 text-secondary"></i>
+              {% endif %}
+              {{ lesson.title }}
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Main content column -->
+        <div class="container">
+            <div class="main_wrapper">
+                <div class="main-content">
+                    <h1>Learn with Video: Bisindo Letter "U"</h1>
+                    <p>Watch the video below to learn how to recognize and sign the letter <strong>U</strong> in Bisindo (Indonesian Sign Language). Follow along and practice!</p>
+
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Bisindo Letter U Tutorial" allowfullscreen></iframe>
+                </div>
+
+                <div class="tips">
+                    <h2>Quick Tips</h2>
+                    <ul>
+                        <li>Use both pinky and index fingers extended for letter U</li>
+                        <li>Keep the middle and ring fingers folded down</li>
+                        <li>Thumb should hold down the two folded fingers</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
