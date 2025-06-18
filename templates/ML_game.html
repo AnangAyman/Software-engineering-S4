@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='gamestyle.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='ml_game.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
 </head>
 <body>
     <div class="sidebar">
+        <a href="/dashboard">
+            <img src="../static/Assets/logo.png" alt="Signlingo Logo" class="logo">
+        </a>
         <h4 class="mb-4">Bisindo Letters</h4>
-        
         <div class="stats-container">
             <div class="stat-item">
                 <div class="stat-number">{{ completed_lessons_count }}/{{ total_lessons_count }}</div>

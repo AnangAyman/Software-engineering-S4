@@ -1,19 +1,36 @@
-        /* Paste the .universal-history-back-button CSS rules here */
         .universal-history-back-button {
             position: fixed;
             top: 20px;
             left: 20px;
             z-index: 1000;
-            background-color: var(--primary-color); /* Now it can use your variable */
-            color: white; /* Assuming white text is desired */
-            /* ... rest of the button styles from above ... */
+            background-color: #2e51a0;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: none;
+            font-family: 'Segoe UI', sans-serif ;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
         }
         .universal-history-back-button i.fas {
             margin-right: 8px;
         }
         .universal-history-back-button:hover {
-            background-color: #24417f; /* Darker shade, or use a CSS variable if you define one */
+            background-color: #24417f;
+            transform: translateY(-2px);
         }
         .universal-history-back-button:active {
-            transform: translateY(1px);
+            transform: translateY(0);
         }
+
+        .logo {
+            max-height: 60px;
+            width: auto;
+            padding-bottom: 20px;
+          }
